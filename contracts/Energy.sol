@@ -106,15 +106,7 @@ contract Energy{
         }
     }
 
-    // function transferFrom(address from, address _to, uint amount) external checkBalance(from, amount){
-    //     require(_to == msg.sender, "not spender");
-    //     uint allowanceBalance = _allowance[from][_to];
-    //     require(allowanceBalance >= amount, "no allowance for you");
-    //     _allowance[from][_to] -= amount;
-    //     _balance[from] -= amount;
-    //     _balance[_to] += amount;
-    // }
-
+     //Assignment
     function transferFrom(address from, address _to, uint amount) external checkBalance(from, amount){
         require(_to == msg.sender, "not spender");
 
